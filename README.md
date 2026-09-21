@@ -19,8 +19,8 @@ Dedicated to simulation modeling, and open-source sharing.
 ### 🛠️ Core Focus
 
 *   **[Python Tutorials](https://github.com/jaimoeth/jaimoeth/tree/main/PythonTutorials)** - Sharing basic Python and coding practice notes.
-*   **[Simulation Modeling](https://github.com/jaimoeth/jaimoeth/tree/main/SimulationModeling)** - Exploring modeling techniques and future commercial possibilities.
-*   **[Open-source Research](https://github.com/jaimoeth/jaimoeth/tree/main/MediumFrequencyLP)** - Medium-Frequency Liquidity Provider (MFLP) models.
+*   **[Data Analysis](https://github.com/jaimoeth/jaimoeth/tree/main/DataAnalysis)** - Practical data analysis projects focused on Python, SQL, data processing, visualization, and developing real-world analytical skills.
+*   **[Open-source Research](https://github.com/jaimoeth/jaimoeth/tree/main/OSResearch)** - Open-source research projects exploring knowledge sharing, collaborative innovation, and the development of accessible research resources.
 
 ---
 
