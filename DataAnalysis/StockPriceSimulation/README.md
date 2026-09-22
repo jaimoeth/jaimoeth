@@ -22,7 +22,7 @@ We further assume that the log-stock price follows the following jump-diffusion 
 
 $$ dX_t = \mu_X dt + \sigma dW_t + J_t dN_t $$
 
-Where $W_t$ is a standard Brownian motion, $N_t$ is a Poisson process with intensity $\lambda$ , and $J_t$ represents the size of an individual jump, which follows a double-exponential distribution.
+where $W_t$ is a standard Brownian motion, $N_t$ is a Poisson process with intensity $\lambda$ , and $J_t$ represents the size of an individual jump, which follows a double-exponential distribution.
 
 Integrating the above stochastic differential equation gives:
 

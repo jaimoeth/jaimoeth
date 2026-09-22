@@ -197,4 +197,4 @@ $$
 `$\left\{1,2,\ldots,N\right\}$` $\left\{1,2,\ldots,N\right\}$
 
 ---
-> *"Python Tutorials"*
+> *"Build from first principles."*
