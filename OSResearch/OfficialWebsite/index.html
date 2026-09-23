@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JaiMo | Personal Homepage</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #fbfbfb; color: #2f2f2f; line-height: 1.6; }
+
+    /* 顶部 Banner 区域 */
+    .banner-container {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      background: url('background.jpg') center/cover no-repeat #222;
+    }
+
+    /* 头部个人信息栏 */
+    .header-profile {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    /* 头像：跨越 Banner 和下方内容区域 */
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 12px;
+      border: 4px solid #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      position: absolute;
+      top: -55px;
+      left: 20px;
+      background: #fff;
+      object-fit: cover;
+    }
+
+    /* 名字与简介区域 */
+    .profile-info {
+      padding-top: 65px;
+      padding-bottom: 25px;
+    }
+
+    .profile-info h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 6px;
+    }
+
+    .profile-info p {
+      font-size: 1rem;
+      color: #666;
+      border-left: 3px solid #2e7d32;
+      padding-left: 10px;
+    }
+
+    /* 三栏主体容器 */
+    .main-container {
+      display: flex;
+      max-width: 1140px;
+      margin: 10px auto 40px;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    /* 通用栏目标题 */
+    .column-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #2e7d32; /* Notion 风格绿 */
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* 左栏：Database */
+    .sidebar-left { flex: 1; min-width: 220px; }
+    .db-group { margin-bottom: 15px; }
+    .db-title { font-weight: 600; color: #333; margin-bottom: 6px; display: block; font-size: 0.95rem; }
+    .db-list { list-style: none; padding-left: 12px; }
+    .db-list li { margin-bottom: 6px; font-size: 0.9rem; }
+    .db-list a { color: #555; text-decoration: none; transition: color 0.2s; }
+    .db-list a:hover { color: #2e7d32; text-decoration: underline; }
+
+    /* 中栏：Latest Articles */
+    .content-center { flex: 2; min-width: 320px; }
+    .article-card {
+      background: #ffffff;
+      border: 1px solid #e9e9e9;
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .article-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .article-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      background: #e8f5e9;
+      color: #2e7d32;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .article-desc {
+      font-size: 0.88rem;
+      color: #666;
+      margin-top: 6px;
+      line-height: 1.4;
+    }
+    .article-card h3 { font-size: 1.1rem; margin-bottom: 6px; }
+    .article-card h3 a { color: #111; text-decoration: none; }
+    .article-card h3 a:hover { color: #2e7d32; }
+    .article-date { font-size: 0.8rem; color: #888; }
+
+    /* 右栏：Connection */
+    .sidebar-right { flex: 1; min-width: 220px; }
+    .contact-card {
+      background: #ffffff;
+      border: 1px solid #e9e9e9;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+    }
+    .contact-card h4 { font-size: 0.95rem; margin-bottom: 4px; color: #222; }
+    .contact-card p { font-size: 0.8rem; color: #777; margin-bottom: 8px; }
+    .contact-card a { font-size: 0.85rem; color: #0066cc; text-decoration: none; word-break: break-all; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* 页脚：注意事项 */
+    footer {
+      max-width: 1140px;
+      margin: 40px auto 30px;
+      padding: 20px;
+      border-top: 1px solid #eaeaea;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    footer h4 { color: #333; margin-bottom: 6px; font-size: 0.95rem; }
+
+    /* 移动端适应 */
+    @media (max-width: 768px) {
+      .main-container { flex-direction: column; }
+      .avatar { left: 50%; transform: translateX(-50%); }
+      .profile-info { text-align: center; }
+      .profile-info p { border-left: none; padding-left: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 最上方背景图 -->
+  <div class="banner-container"></div>
+
+  <!-- 个人头像 + 名字 + 简介 -->
+  <div class="header-profile">
+    <img src="avatar.png" alt="JaiMo Avatar" class="avatar" />
+    <div class="profile-info">
+      <h1>JaiMo</h1>
+      <p>Building from first principles. Exploring quantitative systems.</p>
+    </div>
+  </div>
+
+  <!-- 三栏核心布局 -->
+  <div class="main-container">
+
+    <!-- 左侧：Database 数据库分类 -->
+    <aside class="sidebar-left">
+      <div class="column-title">🪴 Database</div>
+      
+      <!-- Data Analysis 分类 -->
+      <div class="db-group">
+        <span class="db-title">📊 Data Analysis</span>
+        <ul class="db-list">
+          <li><a href="DataAnalysis/StockPriceSimulation.html" target="_blank">· Stock Price Simulation</a></li>
+        </ul>
+      </div>
+
+      <!-- Python Tutorials 分类 -->
+      <div class="db-group">
+        <span class="db-title">🐍 Python Tutorials</span>
+        <ul class="db-list">
+          <li><a href="PythonTutorials/0LaTeXNotes.html" target="_blank">· LaTeX Notes</a></li>
+          <li><a href="PythonTutorials/1PythonEnglish.html" target="_blank">· Python Basics - English</a></li>
+          <li><a href="PythonTutorials/1PythonChinese.html" target="_blank">· Python Basics - Chinese</a></li>
+        </ul>
+      </div>
+
+      <!-- Open-source Research 分类 -->
+      <div class="db-group">
+        <span class="db-title">🔬 Open-source Research</span>
+        <ul class="db-list">
+          <!-- <li><span style="color:#aaa; font-size:0.85rem;">No public projects available.</span></li> -->
+          <!-- <li><a href="index.html">· Official Website</a></li> -->
+          <li><a href="https://github.com/jaimoeth/jaimoeth/tree/main/OSResearch/OfficialWebsite" target="_blank">· Official Website</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- 中间：Latest Articles 时间流 (最新在上，最早在下) -->
+    <main class="content-center">
+      <div class="column-title">🪵 Latest Articles</div>
+
+      <!-- 1. 最新：Official Website -->
+      <div class="article-card">
+        <span class="article-tag">Open-source Research</span>
+        <h3><a href="https://github.com/jaimoeth/jaimoeth/tree/main/OSResearch/OfficialWebsite" target="_blank">Official Website</a></h3>
+        <div class="article-date">2026/09/22</div>
+        <p class="article-desc">An open-source template for Web3 static blogs and personal knowledge bases, showcasing decentralized web practices that combine IPFS hosting with ENS domain binding.</p>
+      </div>
+
+      <!-- 2. 次新：Stock Price Simulation -->
+      <div class="article-card">
+        <span class="article-tag">Data Analysis</span>
+        <h3><a href="DataAnalysis/StockPriceSimulation.html" target="_blank">Stock Price Simulation</a></h3>
+        <div class="article-date">2026/09/20</div>
+        <p class="article-desc">From fundamental assumptions to the derivation of Stochastic Differential Equations (SDEs): The complete process of mathematical modeling and quantitative simulation for stock price generation functions.</p>
+      </div>
+
+      <!-- 3. 第三：LaTeX Notes -->
+      <div class="article-card">
+        <span class="article-tag">Python Tutorials</span>
+        <h3><a href="PythonTutorials/0LaTeXNotes.html" target="_blank">LaTeX Notes</a></h3>
+        <div class="article-date">2026/09/18</div>
+        <p class="article-desc">A quick-reference guide to common LaTeX syntax and mathematical formula code, designed as a handy index for efficient typesetting and formula entry.</p>
+      </div>
+
+      <!-- 4. 第四：Python Basics - English -->
+      <div class="article-card">
+        <span class="article-tag">Python Tutorials</span>
+        <h3><a href="PythonTutorials/1PythonEnglish.html" target="_blank">Python Basics - English</a></h3>
+        <div class="article-date">2026/09/15</div>
+        <p class="article-desc">Interactive guide covering core Python syntax, data structures, and functions for beginners.</p>
+      </div>
+
+      <!-- 5. 最早：Python Basics - Chinese -->
+      <div class="article-card">
+        <span class="article-tag">Python Tutorials</span>
+        <h3><a href="PythonTutorials/1PythonChinese.html" target="_blank">Python Basics - Chinese</a></h3>
+        <div class="article-date">2026/09/10</div>
+        <p class="article-desc">Python 核心语法与基础操作速查指南，包含变量、数据结构与函数的交互式实例演示。</p>
+      </div>
+
+      <!-- 在中间栏第 5 张卡片下方加入极简引导 -->
+      <div style="text-align: center; margin-top: 20px; font-size: 0.85rem; color: #888;">
+        <span>Showing 5 latest updates. Explore all topics in the <strong>Database</strong> on the left.</span>
+      </div>
+
+    </main>
+
+    <!-- 右侧：Connection 官方联系方式 -->
+    <aside class="sidebar-right">
+      <div class="column-title">📫 Connection</div>
+
+      <!-- BlueSky -->
+      <div class="contact-card">
+        <h4>BlueSky</h4>
+        <p>JaiMo (@jaimo.eth.xyz)</p>
+        <a href="https://bsky.app/profile/jaimo.eth.xyz" target="_blank">https://bsky.app/profile/jaimo.eth.xyz</a>
+      </div>
+
+      <!-- X (Twitter) -->
+      <div class="contact-card">
+        <h4>X (Twitter)</h4>
+        <p>JaiMo (@jaimoeth)</p>
+        <a href="https://x.com/jaimoeth" target="_blank">https://x.com/jaimoeth</a>
+      </div>
+
+      <!-- GitHub -->
+      <div class="contact-card">
+        <h4>GitHub</h4>
+        <p>JaiMo (@jaimoeth)</p>
+        <a href="https://github.com/jaimoeth" target="_blank">https://github.com/jaimoeth</a>
+      </div>
+
+      <!-- Gmail -->
+      <div class="contact-card">
+        <h4>Gmail</h4>
+        <p>Direct Contact</p>
+        <a href="mailto:jaimoeth@gmail.com">jaimoeth@gmail.com</a>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- 最下方：注意事项 & 官方验证渠道 -->
+  <footer>
+    <h4>⚠️ Important Notices & Official Verification Channels</h4>
+    <p style="margin-top: 8px;"><strong>防伪声明</strong>：请认准本 ENS 域名 <code>jaimo.eth</code> 绑定的官方联系渠道。所有涉及资金、项目合作与私信通知，均以 <a href="https://jaimo.eth.xyz" target="_blank">https://jaimo.eth.xyz</a>（ENS 解析验证页面）公示的信息为准。</p>
+    <p style="margin-top: 8px;"><strong>Anti-Fraud Statement</strong>: Please verify all official contact channels bound to the ENS domain <code>jaimo.eth</code>. All matters regarding funds, project collaborations, and direct messages are subject to the information published on <a href="https://jaimo.eth.xyz" target="_blank">https://jaimo.eth.xyz</a> (ENS Resolution Page).</p>
+    <p style="margin-bottom: 12px; font-size: 0.9rem; color: #666; margin-top: 8px;">
+      <strong>Origin of jaimo</strong>: Coined directly from the precise pronunciation (jai-mo) of <strong>"Jianmu" (建木)</strong>—the cosmic world tree in Chinese mythology—serving as a unified digital identity across all platforms.
+    </p>
+    <p style="margin-top: 8px;"><strong>Support Us</strong>: USDC for <code>jaimo.eth</code> | EVM-compatible networks</p>
+  </footer>
+
+</body>
+</html>
