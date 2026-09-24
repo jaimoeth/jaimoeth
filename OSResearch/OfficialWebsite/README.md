@@ -1,1 +1,0 @@
-An open-source template for Web3 static blogs and personal knowledge bases, showcasing decentralized web practices that combine IPFS hosting with ENS domain binding.
