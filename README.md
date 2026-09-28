@@ -3,7 +3,7 @@
 
 <div align="center">
 
-# JaiMo IP
+# JaiMo
 
 </div>
 
