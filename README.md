@@ -1,4 +1,5 @@
-[![ENS](https://img.shields.io/badge/ENS-Verified-green?style=flat-square&logo=ENS)](https://app.ens.domains/jaimo.eth)
+
+[![ENS](https://img.shields.io/badge/ENS-jaimo.eth-green?style=flat-square&logo=ENS)](https://app.ens.domains/jaimo.eth)
 
 <div align="center">
 
