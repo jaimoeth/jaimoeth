@@ -1,20 +1,11 @@
 
-[![ENS](https://img.shields.io/badge/ENS-jaimo.eth-white?style=flat-square&logo=ENS)](https://app.ens.domains/jaimo.eth)
-[![GitHub](https://img.shields.io/badge/DAO-JaiMoDAO-white?style=flat-square&logo=github)](https://github.com/JaiMoDAO)
+[![ENS](https://img.shields.io/badge/jaimo.eth-Verified-green?style=flat-square&logo=ENS)](https://app.ens.domains/jaimo.eth)
 
 <div align="center">
 
 # JaiMo Studio
 
-[![Website](https://img.shields.io/badge/Website-jaimo.eth.limo-green?style=flat-square&logo=googlechrome)](https://jaimo.eth.limo)
-[![Bluesky](https://img.shields.io/badge/Bluesky-%40jaimo.eth.limo-green?style=flat-square&logo=bluesky)](https://bsky.app/profile/jaimo.eth.limo)
-[![X (Twitter)](https://img.shields.io/badge/X-%40jaimoeth-green?style=flat-square&logo=X)](https://x.com/jaimoeth)
-[![GitHub](https://img.shields.io/badge/GitHub-jaimoeth-green?style=flat-square&logo=github)](https://github.com/jaimoeth)
-[![Email](https://img.shields.io/badge/Email-jaimoeth%40gmail.com-green?style=flat-square&logo=gmail)](mailto:jaimoeth@gmail.com)
-
 </div>
-
-
 
 ---
 
