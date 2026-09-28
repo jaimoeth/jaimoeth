@@ -7,8 +7,6 @@
 
 </div>
 
----
-
 ### 💻 About Us
 Dedicated to simulation modeling, and open-source sharing.
 
