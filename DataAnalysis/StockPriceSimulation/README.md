@@ -1,1 +1,0 @@
-From fundamental assumptions to the derivation of Stochastic Differential Equations (SDEs): The complete process of mathematical modeling and quantitative simulation for stock price generation functions.
