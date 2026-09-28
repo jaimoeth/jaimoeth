@@ -1,26 +1,8 @@
+[![ENS](https://img.shields.io/badge/ENS-Verified-green?style=flat-square&logo=ENS)](https://jaimo.eth.xyz)
 
 <div align="center">
 
 # JaiMo Studio
-
-</div>
-
-[![ENS](https://img.shields.io/badge/ENS-Verified-green?style=flat-square&logo=ENS)](https://jaimo.eth.xyz)
-
----
-
-### 💻 About Us
-Dedicated to simulation modeling, and open-source sharing.
-
-### 🛠️ Core Focus
-
-*   **[Python Tutorials](https://github.com/jaimoeth/jaimoeth/tree/main/PythonTutorials)** - Sharing basic Python and coding practice notes.
-*   **[Data Analysis](https://github.com/jaimoeth/jaimoeth/tree/main/DataAnalysis)** - Python, SQL, and data analysis projects focused on practical skills.
-*   **[Open-source Research](https://github.com/jaimoeth/jaimoeth/tree/main/OSResearch)** - Open-source research focused on knowledge sharing and collaboration.
-
----
-
-<div align="center">
 
 [![Website](https://img.shields.io/badge/Website-jaimo.eth.limo-green?style=flat-square&logo=googlechrome)](https://jaimo.eth.limo)
 [![Bluesky](https://img.shields.io/badge/Bluesky-%40jaimo.eth.limo-green?style=flat-square&logo=bluesky)](https://bsky.app/profile/jaimo.eth.limo)
@@ -31,3 +13,17 @@ Dedicated to simulation modeling, and open-source sharing.
 </div>
 
 
+
+---
+
+### 💻 About Us
+Dedicated to simulation modeling, and open-source sharing.
+
+### 🛠️ Core Focus
+
+*   **[Stock Lab](https://github.com/jaimoeth/stock-lab)** - A stock price simulator for trading strategy development.
+*   **[Python Tutorials](https://github.com/jaimoeth/python-tutorials)** - Sharing basic Python and coding practice notes.
+*   **[Open-source Research](https://github.com/JaiMoDAO)** - Open-source research focused on knowledge sharing and collaboration.
+
+---
+> *"Build from first principles."*
