@@ -19,3 +19,6 @@ JaiMo is a unified digital identity inspired by *Jian Mu*, the cosmic world tree
 
 * **[Python](https://github.com/jaimoeth/python)** — Programming fundamentals, practical implementations, and Jupyter Notebook explorations.
 * **[Topics](https://github.com/jaimoeth/topics)** — Technical research, analytical models, and simulations exploring selected topics.
+
+---
+> "Build from first principles."
