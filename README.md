@@ -8,7 +8,7 @@
 
 ### 💻 About JaiMo
 
-Coined directly from the precise pronunciation (jai-mo) of "Jian Mu" —the cosmic world tree in Chinese mythology—serving as a unified digital identity across all platforms. Building software systems from first principles.
+JaiMo is a unified digital identity inspired by Jian Mu, the cosmic world tree in Chinese mythology. The name is coined from its pronunciation, jai-mo, representing a foundation for building across platforms. Building software systems from first principles.
 
 ### 🧭 Philosophy
 
