@@ -1,4 +1,3 @@
-
 [![ENS](https://img.shields.io/badge/jaimo.eth-Verified-green?style=flat-square&logo=ENS)](https://app.ens.domains/jaimo.eth)
 
 <div align="center">
@@ -7,14 +6,20 @@
 
 </div>
 
-### 💻 About Us
-Dedicated to simulation modeling, and open-source sharing.
+### 💻 About JaiMo
+
+JaiMo is a unified digital identity inspired by *Jian Mu*, the cosmic world tree in Chinese mythology. The name is coined from its pronunciation, *jai-mo*, representing a foundation for building across platforms.
+
+Building software systems from first principles.
 
 ### 🛠️ Core Focus
 
-*   **[Stock Lab](https://github.com/jaimoeth/stock-lab)** - A stock price simulator for trading strategy development.
-*   **[Python Tutorials](https://github.com/jaimoeth/python-tutorials)** - Sharing basic Python and coding practice notes.
-*   **[Open-source Research](https://github.com/JaiMoDAO)** - Open-source research focused on knowledge sharing and collaboration.
+* **[Python](https://github.com/jaimoeth/python)** — Programming fundamentals, practical implementations, and Jupyter Notebook explorations.
+* **[Topics](https://github.com/jaimoeth/topics)** — Technical research, analytical models, and simulations exploring selected topics.
 
 ---
-> *"Build from first principles."*
+
+### 🧭 Philosophy
+
+* **Modularity** — Build independent components that can evolve and integrate into a larger system.
+* **Long-Term Development** — Build solid foundations for systems designed to evolve over time.
